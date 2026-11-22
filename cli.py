@@ -33,7 +33,7 @@ def resolve_mode(force_local: bool, force_cloud: bool, model_name: str):
       4. If neither is available, stop and tell the user exactly how to set up either one.
     Returns: (mode: str, api_key: str | None)
     """
-    api_key = os.getenv("GROQ_API_KEY")
+    api_key = os.getenv("Your grok key")
 
     if force_local:
         if not is_ollama_available(model_name):
